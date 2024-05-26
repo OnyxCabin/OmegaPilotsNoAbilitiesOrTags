@@ -1,0 +1,83 @@
+{
+	"Description" : {
+		"Id" : "AbilityDefOmegaMarksman",
+		"Name" : "Backstabber",
+		"Details" : "When the Marksman shoots you, you'll take it and like it",
+		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+	},
+	"Type" : "Command",
+	"ShortDesc" : "Accuracy and Critical hit bonus.",
+    "DisplayParams" : "NeverShow",
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+        {
+            "Description" : {
+                "Id" : "StatusEffect-Ace-WeaponToHit",
+                "Name" : "Laser Precision",
+                "Details" : "The Marksman fires with surgical precision.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : true
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "AccuracyModifier",
+                "operation" : "Float_Add",
+                "modValue" : "-1.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-Marksman-CriticalChance",
+                "Name" : "Crit Bonus",
+                "Details" : "The Marksman knows your weaknesses.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : true
+            },
+            "statisticData" : {
+                "statName" : "CriticalChanceMultiplier",
+                "operation" : "Float_Multiply",
+				"modValue" : "1.25",
+				"modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+	]
+}

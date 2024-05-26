@@ -1,0 +1,141 @@
+{
+    "Description": {
+        "Id": "AbilityDefOmegaSentinal",
+        "Name": "Sentinal Buff",
+        "Details": "I will not break. I will not bow.",
+        "Icon": "UixSvgIcon_specialAbility_BWCL"
+    },
+    "Type": "Command",
+    "ShortDesc": "Sentinal Damage Reduction and Resolve bonuses",
+    "DisplayParams": "NeverShow",
+    "ActivationTime": "Passive",
+    "EffectData": [
+        {
+            "Description": {
+                "Id": "StatusEffect-Sentinal-DamageReduction",
+                "Name": "Sentinal Damage Reduction",
+                "Details": "Sentinals take [AMT] less damage.",
+                "Icon": "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType": "StatisticEffect",
+            "nature": "Buff",
+            "durationData": {
+                "duration": -1,
+                "stackLimit": -1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": true,
+                "showInStatusPanel": true,
+                "hideApplicationFloatie": true
+            },
+            "statisticData": {
+                "statName": "DamageReductionMultiplierAll",
+                "operation": "Float_Multiply",
+                "modValue": "0.85",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        },
+        {
+            "Description": {
+                "Id": "StatusEffect-Sentinal-Resolve",
+                "Name": "Sentinal Resolve Buff",
+                "Details": "Sentinals have +2 resolve.",
+                "Icon": "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType": "StatisticEffect",
+            "nature": "Buff",
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "clearedWhenAttacked": false
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": true,
+                "showInStatusPanel": true,
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "hideApplicationFloatie": true
+            },
+            "statisticData": {
+                "statName": "MoraleBonusGain",
+                "operation": "Int_Add",
+                "modValue": "2",
+                "modType": "System.Int32",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        },        
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Sentinal-Stability",
+                "Name" : "Sentinal Stability Damage Reduction",
+                "Details" : "Incoming stability damage reduced by [AMT].",
+                "Icon" : "uixSvgIcon_equipment_Gyro"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "ReceivedInstabilityMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.75",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+	"Description" : {
+		"Id" : "AbilityDefSlothMeister",
+		"Name" : "Technical Impairment",
+		"Details" : "PASSIVE: Mech's hit by Belphegor never seem to work right afterward",
+		"Icon" : "UixSvgIcon_specialAbility_HiredGuns"
+	},
+	"Type" : "Command",
+	"ShortDesc" : "Hits Bypass Armor",
+    "DisplayParams" : "NeverShow",
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "Description" : {
+                "Id" : "StatusEffect-BEL-SlothMeisterStructureDamage",
+                "Name" : "Technical Impairment",
+                "Details" : "Mech's hit by Belphegor never seem to work right afterward.",
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 1,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "WalkSpeed",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.5",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+		{
+            "Description" : {
+                "Id" : "StatusEffect-BEL-SlothMeisterAttackFloatie",
+                "Name" : "Technical Impairment",
+                "Details" : "Technical Impairment",
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
+            },
+            "effectType" : "FloatieEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 1,
+                "stackLimit" : 0,
+                "triggerLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnWeaponFire",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : true
+            },
+            "floatieData" : {
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+		{
+            "Description" : {
+                "Id" : "StatusEffect-BEL-HeatDamage",
+                "Name" : "Heat Damage",
+                "Details" : "Belphegor's laser fire heats the target, too.",
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Debuff",
+            "durationData" : {
+                "duration" : 1,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "triggerLimit" : 2,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "NotSet",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "statName": "EndMoveHeat",
+                "operation": "Int_Add",
+                "modValue": "5",
+                "modType": "System.Int32",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "Energy",
+                "targetWeaponType" : "Laser",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+	]
+}

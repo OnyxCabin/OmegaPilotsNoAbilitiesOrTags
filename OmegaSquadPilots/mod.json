@@ -1,0 +1,18 @@
+{
+    "Name": "Omega Squad Pilots",
+    "Enabled": true,
+    "Version": "0.2.0",
+    "Description": "Omega Squad Pilots",
+    "Author": "Belbarid",
+    "Website": "",
+    "Contact": "steelkidney@live.com",
+
+        "Manifest": [
+        { "Type": "PilotDef", "Path": "pilot", "AddToDB":true },
+        { "Type": "Sprite", "Path": "sprite", "AddToDB":true },	
+        { "Type": "Texture2D", "Path": "emblems", "AddToAddendum": "PlayerEmblems", "AddToDB":true },
+        { "Type": "Sprite", "Path": "emblems", "AddToAddendum": "PlayerEmblems", "AddToDB":true },
+		{ "Type": "AbilityDef", "Path": "abilities", "AddToDB":true },
+		{ "Type": "SimGameEventDef", "Path": "events", "AddToDB":true }
+    ]
+}

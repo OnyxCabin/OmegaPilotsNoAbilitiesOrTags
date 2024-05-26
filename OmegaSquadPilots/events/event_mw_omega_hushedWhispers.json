@@ -1,0 +1,368 @@
+{
+    "Description" : {
+        "Id" : "event_mw_omega_hushedWhispers",
+        "Name" : "Still waters running deep",
+        "Details" : "While off-duty in your quarters, [[TGT_MW,{TGT_MW.Callsign}]] knocks on your door. \"Commander, I...\" {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:stammer|Default:stammers}, obviously nervous.\r\n\r\n\"Speak your mind, [[TGT_MW,{TGT_MW.Callsign}]]. Everything you say here is confidential.\"\r\n\r\nObviously relieved, [[TGT_MW,{TGT_MW.Callsign}]] continues. \"I was overseeing some routine inventory work that the assistent techs were performing and I saw [[SCN_MW,{SCN_MW.Callsign}]] and [[TRT_MW,{TRT_MW.Callsign}]] huddled in a corner of one of the cargo bays. Even for those ex-Omega crew, they were acting strangely.\"",
+        "Icon" : "uixTxrSpot_Gym.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 50,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "pilot_rebellious"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "Injuries",
+                "op" : "Equal",
+                "val" : 0,
+                "valueConstant" : null
+            }
+        ]
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+                    "omega_comingstorm_complete"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "omega_hushed_complete"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Injuries",
+                    "op" : "Equal",
+                    "val" : 0,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "AdditionalObjects" : [
+        {
+            "Scope" : "SecondaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "SecondaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [
+                        "pilot_omega"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : [
+                    {
+                        "obj" : "Injuries",
+                        "op" : "Equal",
+                        "val" : 0,
+                        "valueConstant" : "0"
+                    }
+                ]
+            }
+        },
+        {
+            "Scope" : "TertiaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "TertiaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [
+                        "pilot_omega"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : [
+                    {
+                        "obj" : "Injuries",
+                        "op" : "Equal",
+                        "val" : 0,
+                        "valueConstant" : "0"
+                    }
+                ]
+            }
+        }
+    ],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Thank the mechwarrior but decline to get involved",
+                "Details" : "Non-participation",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "nothing",
+                        "Details" : "\"Thank you for having the courage to come to me with this, [[TGT_MW,{TGT_MW.Callsign}]],\" you say, \"But as we both know, mechwarriors tend to be the odd sort of people. Probably comes with the decision to dodge PPC bolts for a living. I wouldn't worry about this. Way I see it, as long as you're not hurting anything, then you lot can be about as weird as you need to be if it lets you relieve the stress of what we do. And like I said, what you tell me in confidence stays that way.\"\r\n\r\n[[TGT_MW,{TGT_MW.Callsign}]] salutes and leaves, relieved but clearly troubled.\r\n\r\n",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_high"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "omega_hushed_complete"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Go investigate",
+                "Details" : "risky",
+                "Icon" : ""
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "casual",
+                        "Details" : "You head down to the cargo bay and find [[SCN_MW,{SCN_MW.Callsign}]] and [[TRT_MW,{TRT_MW.Callsign}]] in a corner having a quiet but heated discussion. Relieved that this wasn't anything too awkward you casually approach. \"Talking about anything interesting?\" you ask. [[TRT_MW,{TRT_MW.Callsign}]] looks angry for a moment before controlling {TRT_MW.Subj} expression, but [[SCN_MW,{SCN_MW.Callsign}]] just shows a relaxed smile.\r\n\r\n\"No worries, commander,\" {SCN_MW.Subj} {SCN_MW.Gender?NonBinary:say|Default:says}. \"Just talking about the old days.\"\r\n\r\n\"Funny,\" you reply. \"I checked the duty roster and 'Malingering in a cargo bay' wasn't on either of your rosters. So either you two have decided that this conversation is more important than assigned duties or it's an unexpected diversion that's about to break up when you return to your assigned stations. Which is it?\"\r\n\r\nBoth mechwarriors salute and return to their respective assignments. [[SCN_MW,{SCN_MW.Callsign}]]'s relaxed expression never slips but you catch [[TRT_MW,{TRT_MW.Callsign}]]'s angry expression for just a quick moment.\r\n\r\nYou wonder wha's gotten {TRT_MW.Subj} so upset.",
+                        "Icon" : ""
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "omega_hushed_complete"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_1",
+                        "Name" : "strict",
+                        "Details" : "You head down to the cargo bay and find [[SCN_MW,{SCN_MW.Callsign}]] and [[TRT_MW,{TRT_MW.Callsign}]] in a corner having a quiet but heated discussion, clearly ignoring the duty roster. [[TRT_MW,{TRT_MW.Callsign}]] is clearly giving ground in an argument with [[SCN_MW,{SCN_MW.Callsign}]], but they're being discreet enough that you can't hear what they're saying. You approach and in your 'This is an official interaction' Commander's voice demand \"[[SCN_MW,{SCN_MW.Callsign}]] you're scheduled for shakedown of your mech's repairs after it's last fight. [[TRT_MW,{TRT_MW.Callsign}]] you're supposed to be in the training sims. I don't care how good either of you are on the battlefield. When on duty you will report to the OD, you will check your schedule, and you will report to your assigned stations. So what's going on that's more important than your General Orders?\"\"\r\n\r\n\"Commander, we were just...,\" [[SCN_MW,{SCN_MW.Callsign}]] begins.\r\n\r\nYou cut {SCN_MW.Subj} off. \"That was a rhetorical question, mechwarrior. Move out!\"\r\n\r\nBoth mechwarriors move out, [[SCN_MW,{SCN_MW.Callsign}]] looking troubled and [[TRT_MW,{TRT_MW.Callsign}]] practically in tears.\r\n\r\n\"There's no way we've seen the end of this,\" you think to yourself.",
+                        "Icon" : ""
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "TertiaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_low"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "omega_hushed_complete"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Reprimand [[TGT_MW,{TGT_MW.Callsign}]] ",
+                "Details" : "bad",
+                "Icon" : ""
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "rebellious",
+                        "Details" : "\"Listen, mechwarrior. I don't keep an open door policy so you can abuse it by tattling on people who are just blowing off steam. If it isn't broken, exploding, or on fire, assume that what two adults do isn't any of your business. Is there anything else?\" you ask in a tone clearly saying that there had better not be.\r\n\r\n[[TGT_MW,{TGT_MW.Callsign}]] stiffly salutes, turns, and walks out without a word, anger clear on {TGT_MW.Subj} face.",
+                        "Icon" : ""
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_low"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "pilot_rebellious"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : null
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }                        
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL"
+}

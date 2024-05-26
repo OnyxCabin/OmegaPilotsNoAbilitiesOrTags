@@ -1,0 +1,115 @@
+{
+    "Description": {
+        "Id": "AbilityDefOmegaReaper",
+        "Name": "Reaper Buff",
+        "Details": "Seasons don't fear the Reaper. You should.",
+        "Icon": "UixSvgIcon_specialAbility_BWCL"
+    },
+    "Type": "Command",
+    "ShortDesc": "Reaper Heat and Resolve bonuses",
+    "DisplayParams": "NeverShow",
+    "ActivationTime": "Passive",
+    "EffectData": [
+        {
+            "Description": {
+                "Id": "StatusEffect-Reaper-HeatGen",
+                "Name": "Reaper HeatGen Buff",
+                "Details": "Reaper improved HeatGen [AMT].",
+                "Icon": "uixSvgIcon_equipment_HeatBank"
+            },
+            "effectType": "StatisticEffect",
+            "nature": "Buff",
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": true,
+                "showInStatusPanel": true,
+                "hideApplicationFloatie": true
+            },
+            "statisticData": {
+                "statName": "HeatGenerated",
+                "operation": "Float_Multiply",
+                "modValue": "0.90",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        },
+        {
+            "Description": {
+                "Id": "StatusEffect-Reaper-MaxHeat",
+                "Name": "Reaper MaxHeat Buff",
+                "Details": "Reaper improved MaxHeat [AMT].",
+                "Icon": "uixSvgIcon_equipment_HeatBank"
+            },
+            "effectType": "StatisticEffect",
+            "nature": "Buff",
+            "durationData": {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData": {
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": true,
+                "showInStatusPanel": true,
+                "hideApplicationFloatie": true
+            },
+            "statisticData": {
+                "statName": "MaxHeat",
+                "operation": "Int_Add",
+                "modValue": "15",
+                "modType": "System.Int32",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "StatusEffect-Reaper-EnergyToHit",
+                "Name" : "Laser Precision",
+                "Details" : "The Reaper uses lasers with surgical precision.",
+                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : true
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "AccuracyModifier",
+                "operation" : "Float_Add",
+                "modValue" : "-1.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "Energy",
+                "targetWeaponType" : "Laser",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+    ]
+}
