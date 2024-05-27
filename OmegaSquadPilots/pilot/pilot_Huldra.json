@@ -31,14 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_reckless",
-            "pilot_lucky",
             "omega_name_Huldra",
-            "pilot_magistracy",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

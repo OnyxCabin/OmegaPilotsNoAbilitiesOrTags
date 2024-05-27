@@ -31,14 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_naive",
-            "pilot_reckless",
             "omega_name_Legion",
-            "pilot_comstar",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

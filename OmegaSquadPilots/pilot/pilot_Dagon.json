@@ -31,15 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_honest",
-            "pilot_dependable",
-            "pilot_lucky",
-            "pilot_mechwarrior",
             "omega_name_Dagon",
-            "pilot_periphery",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

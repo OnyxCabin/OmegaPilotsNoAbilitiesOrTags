@@ -31,16 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_brave",
-            "pilot_criminal",
-            "pilot_officer",
             "omega_name_Lamia",
-            "pilot_taurian",
-            "pilot_spacer",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

@@ -31,16 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_tech",
-            "pilot_dependable",
-            "pilot_merchant",
-            "pilot_brave",
-            "pilot_mechwarrior",
             "omega_name_Hastur",
-            "pilot_marik",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

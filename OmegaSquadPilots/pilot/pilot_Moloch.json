@@ -8,7 +8,7 @@
         "Gender": "Male",
         "factionID": "Davion",
         "Age": "36",
-        "Details": "Classified - Commander Eyes Only",
+        "Details": "Roy Moore is a stright-up brawler, both on and off the battlefield. Subtlety and strategy aren't lost on him, they're merely discarded as unwanted. He loves one-on-one competition both on and off the battlefield. Whether dueling, sparring, weight lifting, or (perhaps oddly) chess he pursues competition with a single-minded ferocity.\r\n\r\nCOMMANDER'S NOTE: Do not get him angry.",
         "Icon": "pilot_Moloch"
     },
     "BaseGunnery": "3",
@@ -27,20 +27,11 @@
     "Incapacitated": false,
     "Morale": 0,
     "Voice": "m_pro05_rick",
-    "abilityDefNames": [
-        "AbilityDefDemonsFist"
-    ],
+    "abilityDefNames": [],
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_command",
-            "pilot_drunk",
-            "pilot_mechwarrior",
             "omega_name_Moloch",
-            "pilot_taurian",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

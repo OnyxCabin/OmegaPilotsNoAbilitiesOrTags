@@ -27,19 +27,11 @@
     "Incapacitated": false,
     "Morale": 0,
     "Voice": "f_pro02_irish",
-    "abilityDefNames": [
-        "AbilityDefOmegaReaper"
-    ],
+    "abilityDefNames": [],
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_naive",
             "omega_name_Banshee",
-            "pilot_davion",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

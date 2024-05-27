@@ -27,21 +27,11 @@
     "Incapacitated": false,
     "Morale": 0,
     "Voice": "m_bear01",
-    "abilityDefNames": [
-        "AbilityDefMasterAndCommander"
-    ],
+    "abilityDefNames": [],
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_athletic",
-            "pilot_command",
-            "pilot_officer",
             "omega_name_Asmodeus",
-            "pilot_davion",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

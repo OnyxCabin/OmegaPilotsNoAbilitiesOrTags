@@ -33,16 +33,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_gladiator",
-            "pilot_criminal",
-            "pilot_dishonest",
-            "pilot_assassin",
-            "pilot_mechwarrior",
             "omega_name_Valac",
-            "pilot_magistracy",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

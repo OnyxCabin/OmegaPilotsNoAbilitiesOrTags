@@ -31,17 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_athletic",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_lucky",
-            "pilot_command",
-            "pilot_gladiator",
             "omega_name_Wraith",
-            "pilot_innersphere",
-            "pilot_davion",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

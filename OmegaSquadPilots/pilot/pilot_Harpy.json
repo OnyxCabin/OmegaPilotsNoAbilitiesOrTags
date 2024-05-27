@@ -31,15 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_command,",
-            "pilot_tech",
-            "pilot_spacer",
             "omega_name_Harpy",
-            "pilot_kurita",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

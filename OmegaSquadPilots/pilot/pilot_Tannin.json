@@ -31,15 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_athletic",
-            "pilot_noble",
-            "pilot_wealthy",
-            "pilot_mechwarrior",
             "omega_name_Tannin",
-            "pilot_liao",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""
