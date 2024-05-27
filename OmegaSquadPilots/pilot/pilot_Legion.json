@@ -8,7 +8,7 @@
         "Gender": "Male",
         "factionID": "Davion",
         "Age": "24",
-        "Details": "Classified - Commander Eyes Only",
+        "Details": "Whenever asked about his background and training, Simon Worthington will generally give an open and glib answer. It isn't until afterward that the asker realizes that Worthington didn't actually give any real information on himself.\r\n\r\nOn the battlefield, Worthington prefers a long range supporting fire role. With clear lines of fire it's easy to forget that there's only one of him.",
         "Icon": "pilot_Legion"
     },
     "BaseGunnery": "2",
@@ -37,7 +37,7 @@
             "pilot_mechwarrior",
             "pilot_naive",
             "pilot_reckless",
-            "name_Legion",
+            "omega_name_Legion",
             "pilot_comstar",
             "pilot_omega"
         ],
