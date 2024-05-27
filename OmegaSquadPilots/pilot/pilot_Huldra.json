@@ -8,7 +8,7 @@
         "Gender": "Female",
         "factionID": "Davion",
         "Age": "39",
-        "Details": "Classified - Commander Eyes Only",
+        "Details": "Victoria Mortensen is beautiful, personable, and exploits those traits for all they're worth. Treating her with respect gets respect and she'll use her keen insight into what other people need to provide unseen, anonymous, help. Treat her poorly, though, and that same insight gets turned to something dangerous.\r\n\r\nHer combat style matches her personality. She prefers high speed, high maneuverability mechs and makes clever use of terrain to hide her approach and then unleashing with deadly strikes at enemy weak points.",
         "Icon": "pilot_Huldra"
     },
     "BaseGunnery": "2",
@@ -31,14 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_reckless",
-            "pilot_lucky",
-            "name_Huldra",
-            "pilot_magistracy",
+            "omega_name_Huldra",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

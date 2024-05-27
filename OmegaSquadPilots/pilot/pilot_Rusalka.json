@@ -31,14 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_cautious",
-            "pilot_jinxed",
-            "name_Rusalka",
-            "pilot_periphery",
+            "omega_name_Rusalka",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

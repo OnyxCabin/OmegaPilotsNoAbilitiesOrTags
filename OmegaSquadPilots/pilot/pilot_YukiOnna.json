@@ -31,17 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_brave",
-            "pilot_assassin",
-            "pilot_spacer",
-            "name_YukiOnna",
-            "pilot_innersphere",
-            "pilot_tech",
-            "pilot_davion",
+            "omega_name_YukiOnna",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

@@ -27,20 +27,11 @@
     "Incapacitated": false,
     "Morale": 0,
     "Voice": "m_pro03_brit",
-    "abilityDefNames": [
-        "AbilityDefSlothMeister"
-    ],
+    "abilityDefNames": [],
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_bookish",
-            "pilot_tech",
-            "pilot_jinxed",
-            "pilot_mechwarrior",
-            "name_Belphegor",
-            "pilot_steiner",
+            "omega_name_Belphegor",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

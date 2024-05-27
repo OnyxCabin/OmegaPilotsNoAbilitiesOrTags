@@ -31,15 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_drunk",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_command",
-            "pilot_gladiator",
-            "name_Kikimora",
-            "pilot_tortuga",
+            "omega_name_Kikimora",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

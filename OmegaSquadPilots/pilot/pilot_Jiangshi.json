@@ -31,16 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_athletic",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_lucky",
-            "pilot_command",
-            "pilot_gladiator",
-            "name_Jiangshi",
-            "pilot_liao",
+            "omega_name_Jiangshi",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

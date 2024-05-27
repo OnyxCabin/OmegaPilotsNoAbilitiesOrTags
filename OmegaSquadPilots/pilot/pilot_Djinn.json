@@ -31,17 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_mechwarrior",
-            "pilot_criminal",
-            "pilot_dishonest",
-            "pilot_merchant",
-            "pilot_wealthy",
-            "pilot_noble",
-            "name_Djinn",
-            "pilot_periphery",
+            "omega_name_Djinn",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""

@@ -13,7 +13,7 @@
             "tagSetSourceFile" : "Tags/PilotTags",
             "items" : [
                 "pilot_omega",
-                "name_Belphegor"
+                "omega_name_Belphegor"
             ]
         },
         "ExclusionTags" : {

@@ -31,14 +31,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_backer",
-            "BLACKLISTED",
-            "pilot_military",
-            "pilot_criminal",
-            "pilot_reckless",
-            "pilot_mechwarrior",
-            "name_Loki",
-            "pilot_marik",
+            "omega_name_Loki",
             "pilot_omega"
         ],
         "tagSetSourceFile": ""
